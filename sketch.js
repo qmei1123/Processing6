@@ -1,8 +1,3 @@
-var widthX;
-var heightY;
-var speed = 1;
-var circleX = 0;
-var circleY = 300;
 var col = {
     r: 0,
     g: 0,
@@ -11,7 +6,7 @@ var col = {
 };
 function setup() {
     createCanvas(1000, 900);
-    frameRate(1);
+    frameRate(3);
 }
 
 function draw() {  
@@ -22,5 +17,8 @@ function draw() {
         stroke(r, g, b);
         strokeWeight(r);
         line(i, 0, i, height);
+    
 }
+    ellipse(mouseX, mouseY, 50, 50);
+    fill(200, 200, 150);
 }
