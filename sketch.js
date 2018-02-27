@@ -16,7 +16,7 @@ function draw() {
         var b = random(255);
         stroke(r, g, b);
         strokeWeight(r);
-        line(i, 0, i, height);
+        ellipse(20, 20, i, i);
     
 }
     ellipse(mouseX, mouseY, 50, 50);
